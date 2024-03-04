@@ -66,6 +66,7 @@ function Projects() {
                     <li>Build interactive and engaging AI models</li>
                     <li>Learn the core fundamentals of how AI is created</li>
                     <li>Understand the basics of AI and how it can be used to solve problems</li>
+
                 </ul>
             </div>
         </div>
