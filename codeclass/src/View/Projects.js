@@ -57,21 +57,17 @@ function Projects() {
                     </ul>
                 </div>
             </div>
+            <h1 className="">Advanced AI lessons</h1>
+            <div className="d-flex">
 
-            <div className="container d-flex justify-content-center align-items-center mt-4">
-                <div className="d-flex flex-column">
-                    <h1 className="text-center">Advanced AI lessons</h1>
-                    <img src={AIPic} alt="PacmanSharks" className='mx-auto mb-4' style={{ width: '25%' }} />
-                </div>
-                <div className="d-flex flex-column">
-                    <ul>
-                        <li>Learn how to use AI to solve problems</li>
-                        <li>Build a project that uses AI to solve a real-world problem</li>
-                        <li>Understand the basics of AI and how it can be used to solve problems</li>
-                    </ul>
-                </div>
+                <img src={AIPic} alt="PacmanSharks" className='mb-4' style={{ width: '25%' }} />
+
+                <ul>
+                    <li>Build interactive and engaging AI models</li>
+                    <li>Learn the core fundamentals of how AI is created</li>
+                    <li>Understand the basics of AI and how it can be used to solve problems</li>
+                </ul>
             </div>
-
         </div>
     );
 }
