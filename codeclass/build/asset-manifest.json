@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.47955a4f.css",
+    "main.js": "/static/js/main.60826e31.js",
+    "static/js/453.c16eda96.chunk.js": "/static/js/453.c16eda96.chunk.js",
+    "static/media/algo.jpg": "/static/media/algo.3175e1387be60de7d8ed.jpg",
+    "static/media/group.jpg": "/static/media/group.03a50923b86b1f7fb99a.jpg",
+    "static/media/groupCode.jpg": "/static/media/groupCode.72106d2a5edd2351e75c.jpg",
+    "static/media/kidStudying.jpg": "/static/media/kidStudying.24116adf954fbd02ae8c.jpg",
+    "static/media/cleanLaptop.jpg": "/static/media/cleanLaptop.ca6808c018c74dd8998b.jpg",
+    "static/media/PacmanSharks.jpg": "/static/media/PacmanSharks.6e0518ae58cec99c3ccf.jpg",
+    "static/media/kidCoding.jpg": "/static/media/kidCoding.ee921e66f6bad5f13ccd.jpg",
+    "static/media/AIPic.jpg": "/static/media/AIPic.1503602bba0006dc9a36.jpg",
+    "static/media/reactAppPic.jpg": "/static/media/reactAppPic.fd7017c56ebcf20cb10d.jpg",
+    "static/media/glassesCode.jpg": "/static/media/glassesCode.cbc94405d8ec34608d22.jpg",
+    "static/media/databasePic.jpg": "/static/media/databasePic.8d26edcece0b58000ec4.jpg",
+    "static/media/HTMLpic.jpg": "/static/media/HTMLpic.b2eb010794110d6f91b1.jpg",
+    "index.html": "/index.html",
+    "main.47955a4f.css.map": "/static/css/main.47955a4f.css.map",
+    "main.60826e31.js.map": "/static/js/main.60826e31.js.map",
+    "453.c16eda96.chunk.js.map": "/static/js/453.c16eda96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47955a4f.css",
+    "static/js/main.60826e31.js"
+  ]
+}
