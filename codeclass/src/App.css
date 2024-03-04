@@ -1,3 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(2deg);
+  }
+}
+
+p {
+  animation: fadeIn 2.5s;
+
+}
+
+li {
+  animation: fadeIn 1.5s;
+}
+
+img {
+  animation: fadeIn 2s;
+}
+
+.flex {
+  display: flex;
+}
+
 .App {
   text-align: center;
 }
@@ -28,10 +62,30 @@
   color: #61dafb;
 }
 
+#homeBackground {
+  background-image: url('../src/Pictures/kidStudying.jpg');
+  background-size: cover;
+  min-height: 90vh;
+  width: 100vw;
+}
+
+#homePgInfo {
+  background-color: rgba(70, 206, 252, 0.576);
+  /* Adjust the alpha value (0.5) for transparency */
+  padding: 2%;
+  /* Adjust padding as needed */
+  width: 80vw;
+  border-left: 4px double white;
+  /* Add this line */
+
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
