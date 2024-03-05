@@ -12,9 +12,9 @@ function App() {
   return (
     <div className=" bg-info">
       <Helmet>
-        <title>Your Website Title</title>
-        <meta name="description" content="Description of your website" />
-        <meta property="og:title" content="Your Website Title" />
+        <title>The Coding Class For Kids</title>
+        <meta name="description" content="Unlock your child's potential with engaging online coding classes tailored for young minds at TheCodingClassForKids.com." />
+        <meta property="og:title" content="The Coding Class For Kids" />
         <meta property="og:description" content="Description of your website" />
         <meta property="og:image" content={logo} /> {/* Image URL */}
         <meta property="og:url" content="Your website URL" />
