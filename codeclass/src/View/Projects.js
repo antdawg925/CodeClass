@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import PacmanSharks from "../Pictures/PacmanSharks.jpg";
 import reactAppPic from "../Pictures/reactAppPic.jpg";
 import databasePic from "../Pictures/databasePic.jpg";
 import algo from "../Pictures/algo.jpg";
@@ -12,23 +11,21 @@ function Projects() {
     return (
         <div className='text-bg-secondary'>
 
-            <button onClick={() => navigate('/')} className="btn btn-primary mb-4">Go to Home</button>
+            <button onClick={() => navigate('/')} className="mb-4">Go to Home</button>
 
             <div className='row justify-content-center'>
                 <div className='col-10 bg-info bg-gradient p-4'>
-                    <h4 className='fw-semibold text-center'>Unlock Your Child's Potential with Fun and Interactive Online Coding Classes</h4>
+                    <h4 className='fw-semibold text-center'>After ever course your child will leave with a practical and dynamic application they will use to build their professional portfolio!</h4>
                     <p>
-                        Are you a parent looking to provide your child with valuable skills that will
-                        set them up for success in the digital age? Look no further! The Coding Class for
-                        kids offers engaging afterschool online coding classes nationwide, designed
-                        specifically for young minds.
+                        Our courses are designed the build and develop the skills needed to succeed in the tech industry. We focus on growing your child's interest with interactive applications that are challenging and rewarding that will
+                        keep them engaged and excited to learn more. We also focus on building a strong foundation in computer science and programming that will help them to succeed in the workforce.
                     </p>
                 </div>
             </div>
 
             <div className='mt-4'>
-                <div className='d-flex'>
-                    <img src={reactAppPic} alt="reactAppPic" className='w-25 flex h-25 me-4' />
+                <div className='d-flex mt-4'>
+                    <img src={reactAppPic} alt="reactAppPic" className='w-25 flex me-4' />
                     <ul>
                         <h3>Web Pages and Web Apps</h3>
                         <li>Using industry standard libraries and tools to create dynamic web pages</li>

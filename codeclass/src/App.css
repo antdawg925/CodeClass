@@ -1,7 +1,48 @@
 * {
   margin: 0;
   padding: 0;
+  border-radius: 5px;
 }
+
+button {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #4c87af;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+button:hover::before {
+  width: 0;
+  height: 0;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
+
 
 @keyframes fadeIn {
   0% {
@@ -13,6 +54,14 @@
     opacity: 1;
     transform: rotate(2deg);
   }
+}
+
+.flex-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 p {
