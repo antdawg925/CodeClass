@@ -56,6 +56,13 @@ button span {
   }
 }
 
+#thanks-box {
+  width: 70%;
+  margin: 13% auto;
+  height: 40%;
+  padding: 1rem;
+}
+
 .flex-col {
   display: flex;
   align-items: center;
@@ -83,6 +90,54 @@ img {
 
 .App {
   text-align: center;
+}
+
+.statement-container {
+  text-align: center;
+  margin: 50px auto;
+  /* Center the box horizontally and add margin-top */
+  padding: 20px;
+  /* Add padding to create some space around the text */
+  border: 2px solid #c2db5f;
+  /* Add a border with a red color */
+  border-radius: 10px;
+  /* Add border radius for rounded corners */
+  box-shadow: 10px 20px 16px 0 rgba(255, 255, 0, 0.2), 0 19px 20px 0 rgba(255, 255, 0, 0.19);
+  background-color: #61dafb;
+  /* Add box shadow for depth effect */
+  background-color: #f9f9f9;
+  /* Set background color */
+  width: 70vw;
+  /* Set width to 70vw */
+  /* Optional: Add max-width for responsiveness */
+}
+
+.statement-container h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 3vh;
+  color: #333;
+  /* Set text color */
+}
+
+#conformation-box {
+  position: absolute;
+  top: 12rem;
+  left: 35%;
+  width: 30%;
+  min-width: 20rem;
+  background-color: whitesmoke;
+  height: 65%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#X {
+  cursor: grab;
+  width: 100%;
+  background-color: #4c87af;
+  padding: 10px;
+  color: rgb(78, 244, 97);
 }
 
 .App-logo {

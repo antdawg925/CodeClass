@@ -1,12 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import kidStudying from "../Pictures/kidStudying.jpg";
-import glassCode from "../Pictures/glassesCode.jpg";
-import HTMLpic from "../Pictures/HTMLpic.jpg";
-import cleanLaptop from "../Pictures/cleanLaptop.jpg";
-import group from "../Pictures/group.jpg";
-import groupCode from "../Pictures/groupCode.jpg";
 import kidCoding from "../Pictures/kidCoding.jpg";
+import glassCode from "../Pictures/glassesCode.jpg";
 
 function HomePage() {
     const navigate = useNavigate();
@@ -16,15 +11,13 @@ function HomePage() {
     };
 
     return (
-        <div className=''>
+        <div>
             <div className='p-3 text-primary-emphasis bg-primary-subtle sticky-top w-100'>
-
                 <h1 className='ms-4'>The Coding Class for Kids</h1>
                 <h5 className='ms-5 fw-bold'>Teaching Silicon Valley Standards</h5>
-
             </div>
 
-            <div id="homeBackground" className="row w-100  m-0">
+            <div id="homeBackground" className="row w-100 m-0">
                 <div className="col"></div> {/* Empty column to push content to the right */}
                 <div className="col"></div> {/* Adjust the width as needed */}
                 <div id="homePgInfo" className="col">
@@ -37,8 +30,11 @@ function HomePage() {
                 </div>
             </div>
 
-            <div className="container text-center w-100 bg-secondary mb-4">
+            <div className="statement-container"> {/* Apply CSS class here */}
+                <h4>Begin building your child's professional portfolio in just 4 weeks!</h4>
+            </div>
 
+            <div className="container text-center w-100 bg-secondary mb-4">
                 <div className="row w-100 m-0 align-items-center">
                     <div className="col-lg-6">
                         <img src={kidCoding} alt="kidCoding" className='img-fluid rounded' />
@@ -48,6 +44,15 @@ function HomePage() {
                         <div className="card bg-light m-4 p-4">
                             <h2>The benefits for your child:</h2>
                             <ul className="list-unstyled">
+                                <li>
+                                    <span className='fw-semibold text-decoration-underline text-primary'>Unlock Your Child's Potential with Fun and Interactive Online Coding Classes: </span>
+                                    <p>
+                                        Are you a parent looking to provide your child with valuable skills that will
+                                        set them up for success in the digital age? Look no further! The Coding Class for
+                                        kids offers engaging afterschool online coding classes nationwide, designed
+                                        specifically for young minds.
+                                    </p>
+                                </li>
                                 <li>
                                     <span className='fw-semibold text-decoration-underline text-primary'>Boosted Confidence: </span>
                                     As children see their coding projects come to life, their confidence soars.
@@ -72,29 +77,23 @@ function HomePage() {
                     </div>
                 </div>
 
-                <div className="row w-100 m-0 align-items-cente">
+                <div className="row w-100 m-0 align-items-center">
                     <div className="col-lg-6">
                         <img src={glassCode} alt="glassCode" className='img-fluid rounded' />
                     </div>
                     <div className="col-lg-6">
                         <div className="card bg-light m-4 p-4">
                             <p>Begin your child's career pathing today!</p>
-                            <button className='btn btn-info' onClick={redirectToProjectsPage}>View project ideas</button>
+                            <button className='btn btn-info' onClick={redirectToProjectsPage}>View projects</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* <div className='text-bg-danger p-3 d-flex flex-column'>
-                <h2>Enroll by Thursday start by Monday</h2>
-                <h4>Contact us now!</h4>
-            </div> */}
-
-            <div className='w-100 bg-primary-subtle m-0 p-0 h-10 d-flex justify-content-center'>
-                <button className='m-2 btn btn-info'>Contact us</button>
-                <button className='m-2 btn btn-info' onClick={() => navigate("/apply")}>Apply Now!</button>
+            <div className='w-100 bg-primary-subtle m-0 p-0 h-10 d-flex flex-col justify-content-center'>
+                <button className='m-2' onClick={() => navigate("/apply")}>Apply Now!</button>
+                <h6>outreach@thecodingclassforkids.com</h6>
             </div>
-
         </div>
     );
 }

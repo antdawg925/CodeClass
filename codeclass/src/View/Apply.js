@@ -7,10 +7,10 @@ const Apply = () => {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [number, setNumber] = useState("");
-    const [sub, setSub] = useState("");
+    const [sub, setSub] = useState("WebApp");
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
-    const [thx, setThx] = useState(false);
+    const [thx, setThx] = useState(true);
     const [age, setAge] = useState(0);
     const [recruitingContact, setRecruitingContact] = useState(false); // State for the recruiting contact checkbox
     const [border, setBorder] = useState("none")
@@ -19,16 +19,20 @@ const Apply = () => {
         e.preventDefault();
 
         if (email.length < 1 || name.length < 1 || number.length < 1 || message.length < 1 || age < 1 || recruitingContact === false) {
-            setError("All fields are required")
+            setError("All fields are required!")
             if (recruitingContact === false) {
                 setBorder("2px solid red")
+            }
+            if (recruitingContact === true) {
+                setBorder("none")
             }
             console.log("Error: All fields are required")
             return Error;
         }
 
-        emailjs.sendForm("service_giyv6oa", "template_hoq0ftw", e.target, "IzdB39g7KF5jYu2iA")
+        emailjs.sendForm("service_eanrgxt", "template_6kt99ud", e.target, "HTpW9erczHebshG2g")
             .then((result) => {
+                console.log("sub", sub);
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
@@ -40,6 +44,7 @@ const Apply = () => {
         setMessage("")
         setName("")
         setSub("")
+        setAge(0)
         setRecruitingContact(false); // Reset recruitingContact state after form submission
         setBorder("none")
     }
@@ -57,6 +62,7 @@ const Apply = () => {
                 {
                     thx ? (
                         <div id="conformation-box">
+                            <h5 id="X" onClick={e => { setThx(false) }}>X</h5>
                             <h4 id="thanks-box">Thank you for your inquiry! Our team will reach out to the email provided.</h4>
                         </div>
                     ) : null
@@ -81,14 +87,15 @@ const Apply = () => {
                         alignItems: "left"
                     }}>
 
-                    <h3 style={{ color: "#4a00ff" }}>{error}</h3>
 
                     <h5>Class Inquiry:</h5>
-                    <select name="subject" value={sub} onChange={(e) => setSub(e.target.value)}>
+                    <select name="sub" value={sub} onChange={(e) => setSub(e.target.value)}>
+                        {/* <option value="SelectSub">Select a subject</option> */}
                         <option value="WebApp">Web-app development</option>
                         <option value="WebAppAndDatabase">Web-apps and databases</option>
                         <option value="AlgoTraining">Algorithm training</option>
                         <option value="IntoToAI">Intro to AI</option>
+                        <option value="Other">Other</option>
                     </select>
 
                     <h5>Your name:</h5>
@@ -107,14 +114,20 @@ const Apply = () => {
                     <textarea type="text" placeholder=" Inquiry" name="message" rows="5" cols="22" value={message} onChange={(e) => setMessage(e.target.value)} />
 
                     {/* Checkbox for accepting recruiting team contact */}
-                    <label style={{ border: border }}>
-                        <input type="checkbox" name="contactPermission" value={recruitingContact} onChange={(e) => setRecruitingContact(true)} />
-                        <span>
-                            I consent to being contacted by The Coding Class for Kids' recruiting team to schedule a class session.
+                    <div style={{ border: border }}>
+                        <input
+                            type="checkbox"
+                            name="contactPermission"
+                            checked={recruitingContact}
+                            onChange={(e) => setRecruitingContact(e.target.checked)}
+                        />
+                        <span style={{ marginLeft: "5px" }}>
+                            I consent to being contacted by The Coding Class for Kids recruiting team for additional information.
                         </span>
-                    </label>
+                    </div>
 
 
+                    <h3 style={{ color: "#4a00ff" }}>{error}</h3>
                     <button className="button">Send!</button>
 
                 </form>
