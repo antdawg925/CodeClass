@@ -10,7 +10,7 @@ const Apply = () => {
     const [sub, setSub] = useState("WebApp");
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
-    const [thx, setThx] = useState(true);
+    const [thx, setThx] = useState(false);
     const [age, setAge] = useState(0);
     const [recruitingContact, setRecruitingContact] = useState(false); // State for the recruiting contact checkbox
     const [border, setBorder] = useState("none")
