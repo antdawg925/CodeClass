@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.327a5e05.css",
-    "main.js": "/static/js/main.898ae04a.js",
+    "main.css": "/static/css/main.949b1c0a.css",
+    "main.js": "/static/js/main.15288e39.js",
     "static/js/453.c16eda96.chunk.js": "/static/js/453.c16eda96.chunk.js",
     "static/media/algo.jpg": "/static/media/algo.3175e1387be60de7d8ed.jpg",
     "static/media/kidStudying.jpg": "/static/media/kidStudying.24116adf954fbd02ae8c.jpg",
     "static/media/kidCoding.jpg": "/static/media/kidCoding.ee921e66f6bad5f13ccd.jpg",
     "static/media/AIPic.jpg": "/static/media/AIPic.1503602bba0006dc9a36.jpg",
     "static/media/reactAppPic.jpg": "/static/media/reactAppPic.fd7017c56ebcf20cb10d.jpg",
+    "static/media/blueCubes.jpg": "/static/media/blueCubes.b91bcf8cbaaa9a4347ce.jpg",
     "static/media/glassesCode.jpg": "/static/media/glassesCode.cbc94405d8ec34608d22.jpg",
     "static/media/databasePic.jpg": "/static/media/databasePic.8d26edcece0b58000ec4.jpg",
-    "static/media/logo.png": "/static/media/logo.977e0369cf67ef6af557.png",
+    "static/media/technical-support.png": "/static/media/technical-support.d8c3bae9051e03eb1018.png",
     "index.html": "/index.html",
-    "main.327a5e05.css.map": "/static/css/main.327a5e05.css.map",
-    "main.898ae04a.js.map": "/static/js/main.898ae04a.js.map",
+    "main.949b1c0a.css.map": "/static/css/main.949b1c0a.css.map",
+    "main.15288e39.js.map": "/static/js/main.15288e39.js.map",
     "453.c16eda96.chunk.js.map": "/static/js/453.c16eda96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.327a5e05.css",
-    "static/js/main.898ae04a.js"
+    "static/css/main.949b1c0a.css",
+    "static/js/main.15288e39.js"
   ]
 }
