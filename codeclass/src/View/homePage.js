@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import kidCoding from "../Pictures/kidCoding.jpg";
 import glassCode from "../Pictures/glassesCode.jpg";
+import SignUpsPt1 from '../Components/SignUpsPt1';
+import Logo from '../Pictures/technical-support.png'
 
 function HomePage() {
     const navigate = useNavigate();
@@ -12,29 +14,36 @@ function HomePage() {
 
     return (
         <div>
-            <div className='p-3 text-primary-emphasis bg-primary-subtle sticky-top w-100'>
-                <h1 className='ms-4'>The Coding Class for Kids</h1>
-                <h5 className='ms-5 fw-bold'>Teaching Silicon Valley Standards</h5>
+            <div className='p-2 bg-primary-subtle sticky-top w-100 d-flex justify-content-between'>
+                <div className='m-1 d-flex justify-content-between'>
+                    <img src={Logo} alt="logo" className='logo' />
+                    <div style={{ margin: "0px", padding: "0px" }}>
+                        <h1 className='ms-1' id="homeTitle">The Coding Class for Kids</h1>
+                        <h5 className='ms-1 fw-bold' id="homeSlogan">Invest in your child's future today!</h5>
+                    </div>
+
+                </div>
+                <button className='m-1 rounded' style={{ height: "60px" }} onClick={() => navigate("/apply")}>Apply Now!</button>
+
             </div>
 
             <div id="homeBackground" className="row w-100 m-0">
-                <div className="col"></div> {/* Empty column to push content to the right */}
+
                 <div className="col"></div> {/* Adjust the width as needed */}
+
                 <div id="homePgInfo" className="col">
-                    <h2>Invest in Your Child's Future Today!</h2>
-                    <p>
-                        Don't miss this opportunity to give your child a head start in building career-developing
-                        skills and increasing their computer literacy. Join The Coding Class for Kids today and watch
-                        your child unlock their full potential in the exciting world of coding!
-                    </p>
+                    <SignUpsPt1 />
                 </div>
             </div>
 
-            <div className="statement-container"> {/* Apply CSS class here */}
-                <h4>Begin building your child's professional portfolio in just 4 weeks!</h4>
-            </div>
+            {/* <h4 className="statement-container">       Don't miss this opportunity to give your child a head start in building career-developing
+                skills and increasing their computer literacy. Join The Coding Class for Kids today and watch
+                your child unlock their full potential in the exciting world of coding!</h4>
+            <p>
 
-            <div className="container text-center w-100 bg-secondary mb-4">
+            </p> */}
+
+            <div className="container text-center w-100 bg-secondary my-4">
                 <div className="row w-100 m-0 align-items-center">
                     <div className="col-lg-6">
                         <img src={kidCoding} alt="kidCoding" className='img-fluid rounded' />
@@ -44,33 +53,23 @@ function HomePage() {
                         <div className="card bg-light m-4 p-4">
                             <h2>The benefits for your child:</h2>
                             <ul className="list-unstyled">
-                                <li>
-                                    <span className='fw-semibold text-decoration-underline text-primary'>Unlock Your Child's Potential with Fun and Interactive Online Coding Classes: </span>
+                                <li className='mt-1'>
+                                    <span className='fw-semibold text-decoration-underline text-primary'>Unlock your child's potential with interactive online coding classes:</span>
                                     <p>
-                                        Are you a parent looking to provide your child with valuable skills that will
-                                        set them up for success in the digital age? Look no further! The Coding Class for
-                                        kids offers engaging afterschool online coding classes nationwide, designed
-                                        specifically for young minds.
+                                        Empower your child for success in the digital era! Discover engaging nationwide afterschool coding classes tailored for young minds, offered by The Coding Class for Kids.
                                     </p>
                                 </li>
-                                <li>
+                                <li className='mt-1'>
                                     <span className='fw-semibold text-decoration-underline text-primary'>Boosted Confidence: </span>
-                                    As children see their coding projects come to life, their confidence soars.
-                                    They learn that they have the ability to create, innovate, and problem-solve –
-                                    valuable skills that will serve them well in any field they choose to pursue.
-                                    Coding encourages a growth mindset, resilience, and a sense of achievement.
+                                    Watch your child's confidence soar as they bring their coding projects to life. Coding fosters valuable skills like creativity, problem-solving, and resilience, empowering them for success in any field.
                                 </li>
-                                <li>
-                                    <span className='fw-semibold text-decoration-underline text-primary'>Increased Computer Literacy: </span>
-                                    In today's digital world, computer literacy is essential. Our classes provide students with a solid foundation in coding and technology,
-                                    empowering them to navigate and excel in an increasingly tech-driven society.
-                                    Learning to code not only teaches technical skills but also fosters computational thinking and problem-solving abilities.
+                                <li className='mt-3'>
+                                    <span className='fw-semibold text-decoration-underline text-primary '>Increased Computer Literacy: </span>
+                                    Empower students for success in today's digital era. Our classes offer a strong foundation in coding and technology, fostering both technical skills and critical thinking for navigating a tech-driven society.
                                 </li>
-                                <li>
+                                <li className="mt-3">
                                     <span className='fw-semibold text-decoration-underline text-primary'>Professional Portfolio: </span>
-                                    By the end of our program, students will have developed a professional portfolio showcasing their coding projects.
-                                    This portfolio not only demonstrates their skills and accomplishments but also serves as a valuable asset for future academic or career endeavors.
-                                    Employers and universities value applicants with a diverse skill set and real-world project experience.
+                                    Upon completion of our program, students will have a professional portfolio featuring their coding projects. This portfolio highlights their achievements and serves as a valuable asset for future academic or career pursuits, highly valued by employers and universities.
                                 </li>
                             </ul>
                         </div>
@@ -82,19 +81,18 @@ function HomePage() {
                         <img src={glassCode} alt="glassCode" className='img-fluid rounded' />
                     </div>
                     <div className="col-lg-6">
-                        <div className="card bg-light m-4 p-4">
-                            <p>Begin your child's career pathing today!</p>
-                            <button className='btn btn-info' onClick={redirectToProjectsPage}>View projects</button>
+                        <div className="card bg-light m-4 p-4 flex-col">
+                            <p>Begin your child's career path today!</p>
+                            <button className='btn btn-info' style={{ minWidth: "200px" }} onClick={redirectToProjectsPage}>View projects</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='w-100 bg-primary-subtle m-0 p-0 h-10 d-flex flex-col justify-content-center'>
-                <button className='m-2' onClick={() => navigate("/apply")}>Apply Now!</button>
-                <h6>outreach@thecodingclassforkids.com</h6>
+            <div className='w-100 bg-primary-subtle p-4 d-flex justify-content-center'>
+                <h5>Outreach@TheCodingClassForKids.com</h5>
             </div>
-        </div>
+        </div >
     );
 }
 

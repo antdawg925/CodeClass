@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #267dfd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+select {
+    width: 78%;
+    border: 2px solid black;
+    border-right: 2px solid#767676;
+    border-bottom: 2px solid#767676;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid black;
+    border-right: 2px solid#767676;
+    border-bottom: 2px solid#767676;
+    min-height: 100px;
+}
+
+input {
+    width: 78%;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    /* height: 300%; */
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+button:hover::before {
+    width: 0;
+    height: 0;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    animation: fadeIn 2s;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(2deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:800px) {
+    button {
+
+        max-height: 100px;
+        max-width: 100px;
+
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    label {
+        font-size: 11px !important;
+    }
+
+    a {
+        max-width: 120px !important;
+        max-height: 60px;
+        line-height: 16px;
+    }
+
+}

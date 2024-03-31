@@ -4,16 +4,16 @@ import reactAppPic from "../Pictures/reactAppPic.jpg";
 import databasePic from "../Pictures/databasePic.jpg";
 import algo from "../Pictures/algo.jpg";
 import AIPic from "../Pictures/AIPic.jpg";
+import TheHeader from '../Components/TheHeader';
 
 function Projects() {
     const navigate = useNavigate(); // Initialize useNavigate hook
 
     return (
         <div className='text-bg-secondary'>
+            <TheHeader />
 
-            <button onClick={() => navigate('/')} className="mb-4">Go to Home</button>
-
-            <div className='row justify-content-center'>
+            <div className='row justify-content-center mt-2'>
                 <div className='col-10 bg-info bg-gradient p-4'>
                     <h4 className='fw-semibold text-center'>After ever course your child will leave with a practical and dynamic application they will use to build their professional portfolio!</h4>
                     <p>

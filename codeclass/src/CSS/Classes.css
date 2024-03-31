@@ -1,0 +1,195 @@
+/* styles.css */
+.redSpan {
+    color: #001aff;
+}
+
+/* Custom CSS */
+.list-group-item.active,
+.list-group-item.active:hover {
+    background-color: rgb(0, 128, 94) !important;
+    color: white !important;
+}
+
+.active-green {
+    background-color: rgb(0, 128, 94) !important;
+    color: white !important;
+}
+
+.active {
+    background-color: rgb(0, 128, 94);
+    color: black;
+}
+
+.logo {
+    max-height: 5rem;
+    max-width: 5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transform: rotate(1deg);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 20000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 20000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 20000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);
+}
+
+.box_limiter {
+    padding: 2rem;
+}
+
+.apply_boxes {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.box_border {
+    border: #282c34 solid 1px;
+    padding: 10px;
+    /* width: 100%; */
+}
+
+.thankYouButtons {
+    margin: 1rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.banner {
+    background-color: #008efb;
+    min-height: fit-content;
+    padding: 1rem;
+}
+
+
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.App {
+    text-align: center;
+}
+
+.scroll_info {
+    margin-left: 500px;
+}
+
+.statement-container {
+    text-align: center;
+    margin: 50px auto;
+    /* Center the box horizontally and add margin-top */
+    padding: 20px;
+    /* Add padding to create some space around the text */
+    border: 2px solid #267dfd;
+    /* Add a border with a red color */
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    /* box-shadow: 10px 20px 16px 0 rgba(255, 255, 0, 0.2), 0 19px 20px 0 rgba(255, 255, 0, 0.19); */
+    background-color: #61dafb;
+    /* Add box shadow for depth effect */
+    background-color: #f9f9f9;
+    /* Set background color */
+    width: 70vw;
+    /* Set width to 70vw */
+    /* Optional: Add max-width for responsiveness */
+}
+
+.test {
+    width: 300px;
+    height: 300px;
+    background: #008efb;
+    background: linear-gradient(217deg, #008efb, #008efb5a 70.71%),
+        linear-gradient(17deg, rgba(34, 0, 255, 0.8), rgba(0, 255, 0, 0) 20.71%),
+        linear-gradient(336deg, #008efb4f, rgba(0, 0, 255, 0) 70.71%);
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.statement-container h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    color: #333;
+    /* Set text color */
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+    .scroll_info {
+        margin-left: 250px;
+    }
+
+    .apply_boxes {
+        min-width: 180px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .thankYouButtons {
+        min-height: 100px;
+    }
+
+    .apply_boxes {
+        max-width: 300px !important;
+    }
+
+    .logo {
+        max-width: 3rem;
+        max-height: 3rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll_info {
+        margin-left: 120px;
+    }
+
+    .box_limiter {
+        padding: 1rem;
+        font-size: 11px;
+    }
+}

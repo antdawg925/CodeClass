@@ -1,0 +1,137 @@
+#applicationBox {
+    background-color: rgb(240, 240, 240);
+    width: 50%;
+    margin: 2rem auto;
+    /* padding: 2rem; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#exitButton {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    margin: 1rem;
+}
+
+#thanks-box {
+    width: 70%;
+    margin: 13% auto;
+    height: 40%;
+    padding: 1rem;
+}
+
+#ThankYou {
+    /* height: 100vh; */
+    background-color: black;
+}
+
+#thankYouInfo {
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#thxBody {
+    background-image: url('../Pictures/blueCubes.jpg');
+    /* width: 100vw; */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* rotate: 180deg; */
+}
+
+#simple-list-example {
+    position: fixed;
+    left: 5%;
+    top: 40%;
+    min-width: 180px;
+}
+
+#info_separator {
+    display: flex;
+    align-items: ;
+    justify-content: space-around;
+
+}
+
+#homeBackground {
+    background-image: url('../Pictures/kidStudying.jpg');
+    background-size: cover;
+    max-height: 88vh;
+    width: 100vw;
+}
+
+#homePgInfo {
+    background-color: rgba(70, 206, 252, 0.576);
+    /* Adjust the alpha value (0.5) for transparency */
+    padding: 2%;
+    /* Adjust padding as needed */
+    height: 88vh;
+    width: 50vw;
+    border-left: 4px double white;
+    /* Add this line */
+
+}
+
+#conformation-box {
+    position: absolute;
+    top: 12rem;
+    left: 35%;
+    width: 30%;
+    min-width: 20rem;
+    background-color: whitesmoke;
+    height: 65%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#X {
+    cursor: grab;
+    width: 100%;
+    background-color: #4c87af;
+    padding: 10px;
+    color: rgb(78, 244, 97);
+}
+
+
+@media (max-width:800px) {
+    #applicationBox {
+        margin-top: 2rem;
+        width: 90%;
+        align-items: center;
+    }
+
+    #homePgInfo {
+        min-width: 60vw;
+    }
+
+    #media-left {
+        padding-left: 3rem;
+    }
+
+    #homeTitle {
+        font-size: 15px;
+    }
+
+    #homeSlogan {
+        font-size: 14px !important;
+        margin: 0px;
+    }
+
+    #header_buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #simple-list-example {
+        position: fixed;
+        top: 55%;
+        left: 2%;
+        width: 60px;
+    }
+
+}
