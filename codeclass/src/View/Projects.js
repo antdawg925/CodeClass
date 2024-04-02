@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import reactAppPic from "../Pictures/reactAppPic.jpg";
 import databasePic from "../Pictures/databasePic.jpg";
 import algo from "../Pictures/algo.jpg";
@@ -7,17 +6,16 @@ import AIPic from "../Pictures/AIPic.jpg";
 import TheHeader from '../Components/TheHeader';
 
 function Projects() {
-    const navigate = useNavigate(); // Initialize useNavigate hook
 
     return (
-        <div className='text-bg-secondary'>
+        <div className='bg-secondary'>
             <TheHeader />
 
             <div className='row justify-content-center mt-2'>
-                <div className='col-10 bg-info bg-gradient p-4'>
+                <div className='col-10 bg-info bg-gradient p-4 '>
                     <h4 className='fw-semibold text-center'>After ever course your child will leave with a practical and dynamic application they will use to build their professional portfolio!</h4>
                     <p>
-                        Our courses are designed the build and develop the skills needed to succeed in the tech industry. We focus on growing your child's interest with interactive applications that are challenging and rewarding that will
+                        Our courses are designed to build and develop the skills needed to succeed in the tech industry. We focus on growing your child's interest with interactive applications that are challenging and rewarding that will
                         keep them engaged and excited to learn more. We also focus on building a strong foundation in computer science and programming that will help them to succeed in the workforce.
                     </p>
                 </div>
@@ -27,7 +25,7 @@ function Projects() {
                 <div className='d-flex mt-4'>
                     <img src={reactAppPic} alt="reactAppPic" className='w-25 flex me-4' />
                     <ul>
-                        <h3>Web Pages and Web Apps</h3>
+                        <h3>Web Pages and Applications</h3>
                         <li>Using industry standard libraries and tools to create dynamic web pages</li>
                         <li>Building rewarding web applications to encourage engagement and independent learning</li>
                         <li>Recreating real webpages which can be deployed to the internet</li>

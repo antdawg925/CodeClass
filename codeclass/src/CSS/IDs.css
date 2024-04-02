@@ -96,6 +96,11 @@
     color: rgb(78, 244, 97);
 }
 
+#header_buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
 
 @media (max-width:800px) {
     #applicationBox {
@@ -125,6 +130,7 @@
         display: flex;
         justify-content: center;
         flex-direction: row;
+        margin-right: 0rem;
     }
 
     #simple-list-example {

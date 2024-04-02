@@ -109,7 +109,7 @@ const Apply = () => {
         <div style={{ height: "auto", width: "100vw", margin: "auto" }} className="row justify-content-center">
             <TheHeader />
 
-            <h3 className="test text-center">Begin building your child's professional portfolio in just 4 weeks!</h3>
+            <h3 className="test text-center">Begin building your child's professional portfolio now!</h3>
 
             <div id="applicationBox" style={{ margin: "10px 50px" }}>
 
@@ -129,7 +129,7 @@ const Apply = () => {
                         </select>
                     </div>
 
-                    <div className="mb-3">
+                    {/* <div className="mb-3">
                         {scheduleError && <p style={{ color: "red", marginBottom: "0" }}>{scheduleError}</p>}
 
                         <>Select a schedule: <span className='redSpan'>*</span></>
@@ -141,7 +141,7 @@ const Apply = () => {
                             <option value="MonWed">Mondays and Wednesdays</option>
                             <option value="TueThur">Tuesdays and Thursdays</option>
                         </select>
-                    </div>
+                    </div> */}
 
                     <div className="mb-3">
                         {skillLevelError && <p style={{ color: "red", marginBottom: "0" }}>{skillLevelError}</p>}
